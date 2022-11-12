@@ -5,7 +5,8 @@ class Product {
   final String title, description;
   final List<String> images;
   final List<Color> colors;
-  final double rating, price;
+  final double rating;
+  final String price;
   final bool isFavourite, isPopular;
 
   Product({
@@ -38,7 +39,7 @@ List<Product> demoProducts = [
       Colors.white,
     ],
     title: "Tuổi trẻ đáng giá bao nhiêu",
-    price: 58.000,
+    price: "58.000",
     description: description1,
     rating: 4.8,
     isFavourite: true,
@@ -56,7 +57,7 @@ List<Product> demoProducts = [
       Colors.white,
     ],
     title: "Con chó nhỏ mang giỏ hoa hồng",
-    price: 60.000,
+    price: "60.000",
     description: description2,
     rating: 4.1,
     isPopular: true,
@@ -73,7 +74,7 @@ List<Product> demoProducts = [
       Colors.white,
     ],
     title: "Có một ngôi nhà để trở về",
-    price: 60.000,
+    price: "60.000",
     description: description3,
     rating: 4.1,
     isFavourite: true,
@@ -91,7 +92,7 @@ List<Product> demoProducts = [
       Colors.white,
     ],
     title: "Trái tim người cha",
-    price: 55.400,
+    price: "55.400",
     description: description4,
     rating: 4.1,
     isFavourite: true,
