@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:tesst/models/Cart.dart';
 
 import '../../../../size_config.dart';
+import '../../../models/Fav.dart';
 import 'fav_card.dart';
 
 class Body extends StatefulWidget {
@@ -40,7 +41,7 @@ class _BodyState extends State<Body> {
                 ],
               ),
             ),
-            child: FavCard(cart: demoCarts[index]),
+            child: FavCard(fav: demoFav[index]),
           ),
         ),
       ),

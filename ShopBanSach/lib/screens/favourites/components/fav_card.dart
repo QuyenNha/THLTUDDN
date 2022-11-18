@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tesst/models/Cart.dart';
+import 'package:tesst/models/Fav.dart';
 
 import '../../../../constants.dart';
 import '../../../../size_config.dart';
@@ -8,9 +9,9 @@ import '../../../../size_config.dart';
 class FavCard extends StatelessWidget {
   const FavCard({
     Key? key,
-    required this.cart,
+    required this.fav,
   }) : super(key: key);
-  final Cart cart;
+  final Fav fav;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class FavCard extends StatelessWidget {
                 color: Color(0xFFF5F6F9),
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: Image.asset(cart.product.images[0]),
+              child: Image.asset(fav.product.images[0]),
             ),
           ),
         ),
@@ -35,20 +36,15 @@ class FavCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              cart.product.title,
+              fav.product.title,
               style: TextStyle(color: Colors.black, fontSize: 16),
               maxLines: 2,
             ),
             Text.rich(
               TextSpan(
-                text: "\$${cart.product.price}",
+                text: "\$${fav.product.price}",
                 style: TextStyle(
                     fontWeight: FontWeight.w600, color: kPrimaryColor),
-                children: [
-                  TextSpan(
-                      text: " x${cart.numOfItem}",
-                      style: Theme.of(context).textTheme.bodyText1),
-                ],
               ),
             ),
             SvgPicture.asset(
