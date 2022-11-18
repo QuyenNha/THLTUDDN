@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../components/coustom_bottom_nav_bar.dart';
-import '../enums.dart';
+import '../../components/coustom_bottom_nav_bar.dart';
+import '../../enums.dart';
 import 'components/bodycategory.dart';
 
 class CategoryScreen extends StatelessWidget {

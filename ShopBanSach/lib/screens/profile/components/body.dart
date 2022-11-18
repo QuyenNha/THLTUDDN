@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../home/home_screen.dart';
 import '../../splash/splash_screen.dart';
 import 'profile_menu.dart';
 import 'profile_pic.dart';

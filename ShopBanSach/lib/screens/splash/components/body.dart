@@ -3,7 +3,6 @@ import 'package:tesst/constants.dart';
 import 'package:tesst/screens/sign_in/sign_in_screen.dart';
 import 'package:tesst/size_config.dart';
 
-// This is the best practice
 import '../components/splash_content.dart';
 import '../../../components/default_button.dart';
 

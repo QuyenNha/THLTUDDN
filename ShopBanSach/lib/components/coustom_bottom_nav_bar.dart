@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tesst/screens/home/home_screen.dart';
 import 'package:tesst/screens/profile/profile_screen.dart';
 
-import '../category/category_screen.dart';
+import '../screens/category/category_screen.dart';
 import '../constants.dart';
 import '../enums.dart';
 import '../screens/favourites/fav_screen.dart';

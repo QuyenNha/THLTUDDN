@@ -17,7 +17,7 @@ class Body extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: SizeConfig.screenHeight * 0.04), // 4%
+                SizedBox(height: SizeConfig.screenHeight * 0.04),
                 Text("ĐĂNG KÝ TÀI KHOẢN", style: headingStyle),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),
                 SignUpForm(),
